@@ -13,7 +13,10 @@ def check():
         price = i.find('span').text.strip()
         print(price)
         price = price.split('$')
-        price = float(price[1])*73.25
+        if input('Is USD okay or INR?(y/n)') == y:
+            price = float(price[1])*73.25
+        else:
+            price = float(price[1])
     if price < LIMIT:
         sendm()
         pass
