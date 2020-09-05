@@ -26,6 +26,7 @@ def sendm():
     server.ehlo()
     email = input('Enter your Email:\n')
     password = input('Enter your password:\n')
+    to_email = input('Enter To Email:\n')
     server.login(email,password)
 
     subject = 'Price of XR fell'
@@ -34,7 +35,7 @@ def sendm():
 
     server.sendmail(
         email,
-        'nickonicko1577@gmail.com',
+        to_email,
         msg
     )
     print('sent!')
