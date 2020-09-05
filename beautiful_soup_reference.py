@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup
 import requests, csv
 
+#I learned this from Corey MS. Great YT channel. Check him if you can.
+
 source = requests.get('https://coreyms.com').text
 
 soup = BeautifulSoup(source,'lxml')
