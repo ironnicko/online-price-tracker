@@ -7,4 +7,4 @@ You'll need prequisites:
   4. Decent IDE [stop using IDLE]
   
 If you do not know how to use pip, just copy paste the following: 
-#pip install -r requirements.txt
+# pip install -r requirements.txt
